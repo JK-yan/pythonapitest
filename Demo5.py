@@ -4,7 +4,7 @@ import requests
 url = 'http://www.photophoto.cn/'
 # respond = requests.get(url='http://img36.photophoto.cn/20150902/0017030052685519_s.jpg', stream=True)
 # print(respond.iter_lines(chunk_size=1024,delimiter=))
-imgUrl = 'http://img36.photophoto.cn/20150902/0017030052685519_s.jpg'
+imgUrl = 'http://clouds.onlinesjtu.com/mooc/2016_3/computer/856/31.mp4'
 
 
 def downloadImageFile(imgUrl):
@@ -21,4 +21,5 @@ def downloadImageFile(imgUrl):
     return local_filename
 
 if __name__ == '__main__':
-    downloadImageFile('http://img36.photophoto.cn/20150902/0017030052685519_s.jpg')
+    # downloadImageFile('http://img36.photophoto.cn/20150902/0017030052685519_s.jpg')
+    downloadImageFile(imgUrl=imgUrl)
