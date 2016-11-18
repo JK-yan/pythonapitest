@@ -17,7 +17,7 @@ import requests
 class GetApi(object):
     def __init__(self):
         config = configparser.ConfigParser()
-        config.read("D:\CODE\learntest\API_InterfaceTest\Conf\conf.conf")
+        config.read("..\Conf\conf.conf")
         self.url = config.get('urls', 'url')
         self.host = config.get('urls', 'host')
 
